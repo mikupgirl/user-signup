@@ -66,14 +66,14 @@ def userForm():
         error_msg = "Sorry, that is not a valid username.".format(form)
         
         return redirect('/?error={0}'.format(error_msg))
-
     if "@" or "." not in user_email:
-         error_msg = "Sorry, that is not a valid email.".format(form)
+        error_msg = "Sorry, that is not a valid email.".format(form)
 
-         return redirect('/?error={0}'.format(error_msg))
+        return redirect('/?error={0}'.format(error_msg))     
 
     content = user_name + user_password + user_verify + user_email
     return form.format(content)
+
 
 @app.route("/")
 def index():
