@@ -11,24 +11,24 @@
 
                 <label for="username">Username:
                     <input type="text" name="Username" autocomplete="on" value='{{name}}' />
-                    <p class="error">{{name_error}}</p>
+                    <span class="error">{{name_error}}</span></p>
                 </label>
 
 
                 <label for="Password">Password:
-                    <input type="text" name="Password" autocomplete="off" value='{{password}}'/>
+                    <input type="password" name="Password" autocomplete="off" value='{{password}}'/>
                 </label>
-                <p class="error">{{password_error}}</p>
+                <span class="error">{{password_error}}</span></p>
 
                 <label for="Verify Password">Verify Password:
-                    <input type="text" name="Verify_Password" autocomplete="off" value='{{verify}}'/>
+                    <input type="password" name="Verify_Password" autocomplete="off" value='{{verify}}'/>
                 </label>
-                <p class="error">{{verify_error}}</p>
+                <span class="error">{{verify_error}}</span></p>
 
                 <label for="Email">Email (optional):
-                    <input type="text" name="Email" />
+                    <input type="text" autocomplete="on" name="Email" />
                 </label>
-                <p class="error">{{email_error}}</p>
+                <span class="error">{{email_error}}</span></p>
                 <br />        
                 <input type="submit" value="Submit" />
             </form>      
