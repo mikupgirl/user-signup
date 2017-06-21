@@ -10,18 +10,18 @@
             <form action="/" method="POST">
 
                 <label for="username">Username:
-                    <input type="text" name="Username" value='{{name}}' />
+                    <input type="text" name="Username" autocomplete="on" value='{{name}}' />
                     <p class="error">{{name_error}}</p>
                 </label>
 
 
                 <label for="Password">Password:
-                    <input type="text" name="Password" value='{{password}}'/>
+                    <input type="text" name="Password" autocomplete="off" value='{{password}}'/>
                 </label>
                 <p class="error">{{password_error}}</p>
 
                 <label for="Verify Password">Verify Password:
-                    <input type="text" name="Verify_Password" value='{{verify}}'/>
+                    <input type="text" name="Verify_Password" autocomplete="off" value='{{verify}}'/>
                 </label>
                 <p class="error">{{verify_error}}</p>
 

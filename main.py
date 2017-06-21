@@ -34,12 +34,13 @@ def userForm():
             verify_error = "Passwords don't match."
             verify = ''       
         
-    if "@" or "." not in user_email:
-        email_error = "Sorry, that is not a valid email."
-        email = ''
+    if len(user_email) > 0:
+        if "@" not in user_email or "." not in user_email:
+            email_error = "Sorry, that is not a valid email."
+            email = ''
           
     if not name_error and not password_error and not verify_error and not email_error:
-            return render_template('welcome_form.html')
+            return render_template('welcome_form.html', name=user_name)
     else:    
         return render_template('signup_form.html',
             name_error=name_error,
